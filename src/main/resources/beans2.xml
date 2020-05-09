@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="abc" class="com.go2it.service.ABC">
+        <constructor-arg value="My name is ABC."/> <!-- this is reference to service-->
+        <property name="text" value="My name is ABC!"/>
+        <property name="repeat" value="3"/>
+    </bean>
+    <bean id="helloKittyService" class="com.go2it.service.HelloKittyService">
+    </bean>
+    <bean name="abcService" class="com.go2it.service.ABCservice">
+        <constructor-arg ref="abc"/>  <!-- this is reference to bean-->
+        <property name="greeting" ref="helloKittyService"/>  <!-- this is reference to bean-->
+    </bean>
+
+
+</beans>

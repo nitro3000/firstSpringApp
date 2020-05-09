@@ -1,0 +1,3 @@
+18:46:51.501 CUSTOM_PATTERN [main] ERROR c.go2it.FirstSpringApp.Application - Hello from error.
+18:48:54.587 CUSTOM_PATTERN [main] ERROR c.go2it.FirstSpringApp.Application - Hello from error.
+18:49:52.624 CUSTOM_PATTERN [main] ERROR c.go2it.FirstSpringApp.Application - Hello from error.
